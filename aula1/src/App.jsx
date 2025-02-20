@@ -7,10 +7,10 @@ import Divisao from './components/Divisao'
 const App = () => {
   return (
     <div>
-      <Adicao num1={2} num2={10} />
-      <Subtracao num1={2} num2={10} />
-      <Multiplicacao num1={2} num2={10} />
-      <Divisao num1={2} num2={10} />
+      <Adicao num1={10} num2={2} />
+      <Subtracao num1={10} num2={2} />
+      <Multiplicacao num1={10} num2={2} />
+      <Divisao num1={10} num2={2} />
     </div>
   )
 }
