@@ -6,7 +6,7 @@ const RenderizaBackOuFront = () => {
         if (tipoCodigo === "Java") {
             return <h1>Java</h1>
         } else if (tipoCodigo === "React") {
-            return <b>React</b>
+            return <b>React<br></br></b>
         } else {
             return <b>Cloud</b>
         }
