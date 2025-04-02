@@ -4,7 +4,7 @@ import EstouAprendendoReact from './components/EstouAprendendoReact'
 const App = () => {
   return (
     <div>
-      <EstouAprendendoReact estouAprendendoReact={true} />
+      <EstouAprendendoReact estouConseguindo={true} />
     </div>
   )
 }
