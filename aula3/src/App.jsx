@@ -1,11 +1,19 @@
 import React from 'react'
-import EstouAprendendoReact from './components/EstouAprendendoReact'
-import EstaComSono from './components/EstaComSono'
+
+import Aluno from './components/Aluno'
 
 const App = () => {
   return (
     <div>
-      <EstaComSono comSono={true} />
+      {
+        [ 
+          {nome: "Saulo", email: "saulopenem@gmail.com", curso: "Sistemas para internet"},
+          {nome: "Jaime", email: "drajaime@gmail.com", curso: "Nutrição"},
+          {nome: "Pedro", email: "pedroso1@gmail.com", curso: "Veterinaria"}
+        ].map((aluno) => 
+        <Aluno nome={aluno.nome} email={aluno.email} curso={aluno.curso} />
+        )
+      }
     </div>
   )
 }
