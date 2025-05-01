@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import EstiloGlobal from "./components/EstiloGlobal.jsx";
+import EstiloInline from "./components/EstiloInline";
+import Campanha from "./components/Campanha";
+import FormularioDeContato from "./components/FormularioDeContato";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    return (
+        <>
+            <h1>Aula 4</h1>
+            <hr />
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+            <h1>Exercício 1</h1>
+            <EstiloGlobal />
 
-export default App
+            <br />
+            <hr />
+            <br />
+
+            <h1>Exercício 2</h1>
+            <EstiloInline />
+
+            <br />
+            <hr />
+            <br />
+
+            <h1>Exercício 3</h1>
+            <Campanha mes={"Setembro"} />
+
+            <br />
+            <hr />
+            <br />
+
+            <h1>Exercício 4</h1>
+            <FormularioDeContato />
+
+        </>
+    );
+};
+
+export default App;
