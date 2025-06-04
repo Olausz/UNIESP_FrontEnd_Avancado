@@ -5,10 +5,12 @@ import Contato from './Pages/Contato'
 import DpolLgpd from './Pages/DpolLgpd'
 import Noticias from './Pages/Noticias'
 import Faculdade from './Pages/Faculdade'
+import Navbar from './Components/Navbar'
 
 const App = () => {
   return (
    <BrowserRouter>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Inicial />}/>
         <Route path="/contato" element={<Contato />}/>
