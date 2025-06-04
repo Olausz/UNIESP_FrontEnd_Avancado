@@ -1,0 +1,19 @@
+{
+    "alunos": [
+        {
+            "id": 1,
+            "nome": "João",
+            "email": "joaogames@gmail.com"
+        },
+        {
+            "id": 2,
+            "nome": "Gabriel",
+            "email": "gabrielgames@gmail.com"
+        },
+        {
+            "id": 1,
+            "nome": "Miguel",
+            "email": "miguelgames@gmail.com"
+        }
+    ]
+}
