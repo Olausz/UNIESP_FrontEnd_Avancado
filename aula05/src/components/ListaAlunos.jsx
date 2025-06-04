@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-
+import React, { useEffect, useState } from 'react';
 
 const ListaAlunos = () => {
     const [aluno, setAlunos] = useState([])
@@ -8,14 +7,15 @@ const ListaAlunos = () => {
         async function fetchData() {
             const response = await fetch("http://localhost:3000/alunos")
             const dados = await response.json()
-
-            setAlunos(dados.alunos)
+            console.log(dados)
+            setAlunos(dados)
         }
+
         fetchData()
     }, [])
   return (
     <div>
-        <table>
+        <table border='1p'>
             <thead>
                 <th>Matricula:</th>
                 <th>Nome:</th>
