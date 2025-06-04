@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react'
 
-const url = "http://localhost:3000/alunos"
 
 const ListaAlunos = () => {
     const [aluno, setAlunos] = useState([])
 
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch(url)
+            const response = await fetch("http://localhost:3000/alunos")
             const dados = await response.json()
 
-            setAlunos(dados)
+            setAlunos(dados.alunos)
         }
         fetchData()
     }, [])
